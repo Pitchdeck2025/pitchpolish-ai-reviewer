@@ -1,7 +1,4 @@
 streamlit
+openai>=1.0.0
 python-pptx
-python-docx
-PyPDF2
-openai
-Pillow
 python-dotenv

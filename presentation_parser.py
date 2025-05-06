@@ -13,7 +13,6 @@ def extract_pptx_text(file):
             "has_image": False,
             "bullet_count": 0
         }
-
         for shape in slide.shapes:
             if shape.has_text_frame:
                 text = shape.text.strip()
@@ -23,9 +22,7 @@ def extract_pptx_text(file):
                     content["body"] += text + " "
                     content["text_count"] += len(text.split())
                     content["bullet_count"] += text.count("•")
-
             if shape.shape_type == 13:
                 content["has_image"] = True
-
         slides_data.append(content)
     return slides_data
