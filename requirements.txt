@@ -1,7 +1,7 @@
 streamlit
 python-pptx
 python-docx
-PyMuPDF
+PyPDF2
+openai
 Pillow
-pytesseract
-
+python-dotenv
