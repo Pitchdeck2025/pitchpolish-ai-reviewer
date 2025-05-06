@@ -1,5 +1,5 @@
 import streamlit as st
-from presentation_parser import extract_text_from_file
+from presentation_parser import extract_pptx_text
 from feedback_engine import analyze_slide
 from design_checks import run_design_checks
 
