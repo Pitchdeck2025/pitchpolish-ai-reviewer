@@ -3,3 +3,5 @@ python-pptx
 python-docx
 PyMuPDF
 Pillow
+pytesseract
+
