@@ -20,7 +20,7 @@ desc = st.text_input("What’s the purpose of this presentation? (e.g. Introduct
 
 if uploaded_file:
     with st.spinner("Analyzing your presentation..."):
-        slides = extract_text_from_file(uploaded_file)
+        slides = extract_pptx_text(uploaded_file)
         for slide in slides:
             st.markdown(f"### Slide {slide['slide_number']}")
             st.markdown(f"**Title:** {slide['title']}")
